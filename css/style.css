@@ -353,6 +353,17 @@ header {
   box-shadow: var(--bs);
 }
 
+.about-me__link {
+  color: inherit;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-h3);
+  text-decoration: none;
+}
+
+.about-me__link:hover {
+  color: var(--clr-accent);
+}
+
 @media (min-width: 600px) {
   .about-me {
     max-width: 1000px;
@@ -401,7 +412,7 @@ header {
 }
 
 .portfolio__item {
-  background: var(--clr-accent);
+  background: var(--clr-light);
   overflow: hidden;
 }
 
