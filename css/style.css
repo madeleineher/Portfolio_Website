@@ -6,15 +6,15 @@
 
 :root {
   /* my custom properties */
-  --ff-primary: 'Source Sans Pro', sans-serif;
-  --ff-secondary: 'Source Code Pro', monospace;
+  --ff-primary: 'Josefin Sans', sans-serif;
+  --ff-secondary: 'Quicksand', sans-serif;
 
-  --fw-reg: 300;
+  --fw-reg: 400;
   --fw-bold: 900;
 
-  --clr-light: #ddecff;
-  --clr-dark: #291b30;
-  --clr-accent: #ed5707;
+  --clr-light: #d8e8fc;
+  --clr-dark: #223301;
+  --clr-accent: #32cd30;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -48,7 +48,7 @@ body {
   margin: 0;
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
-  line-height: 1;
+  line-height: 1.7;
 }
 
 section {
@@ -149,7 +149,7 @@ header {
 }
 
 .logo {
-  max-width: 150px;
+  max-width: 80px;
   /* use a png for the logo */
 }
 
@@ -185,8 +185,8 @@ header {
   text-decoration: none;
 }
 
-.nav_link:hover {
-  color: va(--clr-accent);
+.nav__link:hover {
+  color: var(--clr-accent);
 }
 
 .nav-toggle {
@@ -209,7 +209,7 @@ header {
 }
 
 .nav-open .hamburger {
-  transform: rotate(.625turn);
+  transform: rotate(0.625turn);
 }
 
 .nav-open .hamburger::before {
@@ -217,7 +217,7 @@ header {
 }
 
 .nav-open .hamburger::after {
-  opacity: 0
+  opacity: 0;
 }
 
 /* hamburger */
@@ -299,7 +299,7 @@ header {
 
 .my-services {
   background-color: var(--clr-dark);
-  background-image: url(../imgs/5.jpg);
+  /* background-image: url(../imgs/5.jpg); */
   background-size: cover;
   /* background-blend-mode: multiply; fix this */
   color: var(--clr-light);
@@ -333,7 +333,7 @@ header {
 @media (min-width: 800px) {
   .services {
     display: flex;
-    max-width: 1500px; /* things like this need to be fixed for large screen */
+    max-width: 100%; /* things like this need to be fixed for large screen */
     margin-left: auto;
     margin-left: auto;
   }
@@ -346,7 +346,6 @@ header {
 /* who am i section */
 
 .about-me {
-  max-width: 1000px;
   margin: 0;
 }
 
@@ -356,6 +355,7 @@ header {
 
 @media (min-width: 600px) {
   .about-me {
+    max-width: 1000px;
     display: grid;
     grid-template-columns: 1fr 200px;
     grid-template-areas:
@@ -363,6 +363,7 @@ header {
       'subtitle img'
       'text img';
     grid-column-gap: 2em;
+    margin: 0 auto;
   }
 
   .section__title--about {
@@ -405,6 +406,11 @@ header {
 }
 
 .portfolio__img {
+  width: 400px;
+  height: 400px;
+}
+
+.portfolio__img {
   transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1),
     opactity 250ms linear;
 }
@@ -422,8 +428,8 @@ header {
 
 /* footer */
 .footer {
-  background: #1f2447;
-  color: var(--clr-accent);
+  background: var(--clr-light);
+  color: #2c5e1a;
   text-align: center;
   padding: 2.5em 0;
   font-size: var(--fs-h3);
@@ -461,4 +467,23 @@ header {
 
 .social-list__link {
   padding: 0.5em;
+}
+
+/* portfolio addition */
+
+.portfolio-item-individual {
+  padding: 0 2em 2em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.portfolio-item-individual__img {
+  margin: 0 auto;
+  box-shadow: var(--bs);
+}
+
+.portfolio-item-individual p {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }

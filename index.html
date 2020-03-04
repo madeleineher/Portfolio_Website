@@ -15,9 +15,8 @@
       crossorigin="anonymous"
     />
 
-    <!-- add own font later -->
     <link
-      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Quicksand:400,700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
@@ -25,7 +24,7 @@
   <body>
     <header>
       <div class="logo">
-        <img src="imgs/1.jpg" alt="" />
+        <img src="imgs/site_logo.png" alt="" class="logo__img" />
       </div>
       <button class="nav-toggle" aria-label="toggle navigation">
         <span class="hamburger"></span>
@@ -33,7 +32,7 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#" class="nav__link">Home</a>
+            <a href="#home" class="nav__link">Home</a>
           </li>
           <li class="nav__item">
             <a href="#services" class="nav__link">My Services</a>
@@ -53,7 +52,11 @@
         Hi, I am <strong>Madeleine Hernandez</strong>
       </h1>
       <p class="section__subtitle section__subtitle--intro">Front-End Dev</p>
-      <img src="imgs/2.jpg" alt="pic of madeleine smiling" class="intro__img" />
+      <img
+        src="imgs/face_madeleine.jpeg"
+        alt="pic of madeleine smiling"
+        class="intro__img"
+      />
     </section>
 
     <!-- my services -->
@@ -64,29 +67,32 @@
         <div class="service">
           <h3>Web Design</h3>
           <p>
-            In Finnish, the month is called maaliskuu, which is believed to
-            originate from maallinen kuu, during March, earth finally becomes
-            visible under the snow (other etymological theories have however
-            been put forward).
+            I have had a hand in designing different types of websites for an
+            array of projects. They include a hackathon in collaboration between
+            42 Paris and IFM (Institut Français de la Mode), an e-shop done
+            during the course of a web developpment bootcamp at 42, and the
+            design for the front-end user interface for my last grand project at
+            42.
           </p>
         </div>
         <!-- service -->
         <div class="service">
           <h3>Front-End Developpment</h3>
           <p>
-            In Slovene, the traditional name is sušec, meaning the month when
-            the earth becomes dry enough so that it is possible to cultivate it.
-            The name was first written in 1466 in the Škofja Loka manuscript.
+            I have participated in the developpment (including the back-end) of
+            different websites. For example, I have developped the front-end
+            interface for a conceptual brand called '&amp; The Wonders', an idea
+            shared between two Italians that I collaborated with during a
+            hackathon.
           </p>
         </div>
         <!-- service -->
         <div class="service">
           <h3>E-Commerce</h3>
           <p>
-            In Ukrainian, the month is called березень/berezenʹ, meaning birch
-            tree, and březen in Czech. Historical names for March include the
-            Saxon Lentmonat, named after the March equinox and gradual
-            lengthening of days, and the eventual namesake of Lent.
+            My work in e-commerce includes an e-shop project with administrative
+            functionalities. It was part of 42 web bootcamp where I handled user
+            back-end services and the user experience.
           </p>
         </div>
       </div>
@@ -97,24 +103,25 @@
     <section class="about-me" id="about">
       <h2 class="section__title section__title--about">Who I am</h2>
       <p class="section__subtitle section__subtitle--about">
-        Web developper based out of Paris, France and Los Angeles, California
+        Web developper based out of Paris, France
       </p>
       <div class="about-me__body">
         <p>
-          Blood is a constantly circulating fluid providing the body with
-          nutrition, oxygen, and waste removal. Blood is mostly liquid, with
-          numerous cells and proteins suspended in it, making blood "thicker"
-          than pure water. The average person has about 5 liters (more than a
-          gallon) of blood.
+          I'm a Los Angeles native currently residing in Paris, France. I
+          finisehed my master's in Natural Lanuage Processing in 2018 and I am
+          currently coding at 42 Paris. My skills range from language models to
+          web scrapping to web developpment and more.
         </p>
         <p>
-          A liquid called plasma makes up about half of the content of blood.
-          Plasma contains proteins that help blood to clot, transport substances
-          through the blood, and perform other functions. Blood plasma also
-          contains glucose and other dissolved nutrients.
+          I have finished my current cursus at 42 and I am looking for work
+          experience in the form of an internship in web developpment, with an
+          interest and passion in front-end developpment. I am looking for
+          something based in Los Angeles, California or the Bay Area in Northern
+          California for a duration of four to six months with the possibility
+          of a full-time position afterwards.
         </p>
       </div>
-      <img src="imgs/7.jpeg" alt="" class="about-me__img" />
+      <img src="imgs/full_madeleine.jpeg" alt="" class="about-me__img" />
     </section>
 
     <!-- my work -->
@@ -125,17 +132,17 @@
       </p>
       <div class="portfolio">
         <!-- portfolio item 1 -->
-        <a href="#" class="portfolio__item">
+        <a href="port_wonder.html" class="portfolio__item">
           <img
-            src="imgs/portfolio/portfolio-01.jpg"
+            src="imgs/portfolio/port_wonder_1.png"
             alt=""
             class="portfolio__img"
           />
         </a>
         <!-- portfolio item 2 -->
-        <a href="#" class="portfolio__item">
+        <a href="port_wonder.html" class="portfolio__item">
           <img
-            src="imgs/portfolio/portfolio-02.jpg"
+            src="imgs/portfolio/port_wonder_2.png"
             alt=""
             class="portfolio__img"
           />
@@ -143,7 +150,7 @@
         <!-- portfolio item 3 -->
         <a href="#" class="portfolio__item">
           <img
-            src="imgs/portfolio/portfolio-03.jpg"
+            src="imgs/portfolio/port_rt_2.png"
             alt=""
             class="portfolio__img"
           />
@@ -151,7 +158,7 @@
         <!-- portfolio item 4 -->
         <a href="#" class="portfolio__item">
           <img
-            src="imgs/portfolio/portfolio-04.jpg"
+            src="imgs/portfolio/port_rt_1.png"
             alt=""
             class="portfolio__img"
           />
@@ -172,45 +179,15 @@
             class="portfolio__img"
           />
         </a>
-        <!-- portfolio item 7 -->
-        <a href="#" class="portfolio__item">
-          <img
-            src="imgs/portfolio/portfolio-07.jpg"
-            alt=""
-            class="portfolio__img"
-          />
-        </a>
-        <!-- portfolio item 8 -->
-        <a href="#" class="portfolio__item">
-          <img
-            src="imgs/portfolio/portfolio-08.jpg"
-            alt=""
-            class="portfolio__img"
-          />
-        </a>
-        <!-- portfolio item 9 -->
-        <a href="#" class="portfolio__item">
-          <img
-            src="imgs/portfolio/portfolio-09.jpg"
-            alt=""
-            class="portfolio__img"
-          />
-        </a>
-        <!-- portfolio item 10 -->
-        <a href="#" class="portfolio__item">
-          <img
-            src="imgs/portfolio/portfolio-10.jpg"
-            alt=""
-            class="portfolio__img"
-          />
-        </a>
       </div>
     </section>
 
     <!-- footer -->
     <footer class="footer">
       <!-- add my own email -->
-      <a href="#" class="footer__link">mdln.zdnrh[@]gmail.com</a>
+      <a href="mailto:mdln.zdnrh@]gmail.com" class="footer__link"
+        >mdln.zdnrh[@]gmail.com</a
+      >
       <ul class="social-list">
         <li class="social-list__item">
           <a class="social-list__link" href="https://github.com/madeleineher">
@@ -221,6 +198,7 @@
           <a
             class="social-list__link"
             href="https://www.linkedin.com/in/madeleine-hernan/"
+            traget
           >
             <i class="fab fa-linkedin"></i>
           </a>
