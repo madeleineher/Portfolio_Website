@@ -6,8 +6,8 @@
 
 :root {
   /* my custom properties */
-  --ff-primary: 'Josefin Sans', sans-serif;
-  --ff-secondary: 'Quicksand', sans-serif;
+  --ff-primary: "Josefin Sans", sans-serif;
+  --ff-secondary: "Quicksand", sans-serif;
 
   --fw-reg: 400;
   --fw-bold: 900;
@@ -221,7 +221,6 @@ header {
 }
 
 /* hamburger */
-
 .hamburger {
   display: block;
   position: relative;
@@ -239,7 +238,7 @@ header {
 
 .hamburger::before,
 .hamburger::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
@@ -273,8 +272,8 @@ header {
     grid-column-gap: 1em;
     margin: 0 auto;
     grid-template-areas:
-      'img title'
-      'img subtitle';
+      "img title"
+      "img subtitle";
     grid-template-columns: min-content max-content;
   }
   .intro__img {
@@ -312,7 +311,7 @@ header {
 }
 
 .section__title--services::after {
-  content: '';
+  content: "";
   display: block;
   width: 2em;
   height: 1px;
@@ -364,15 +363,26 @@ header {
   color: var(--clr-accent);
 }
 
+.todo__link {
+  color: inherit;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-h3);
+  text-decoration: none;
+}
+
+.todo__link:hover {
+  color: var(--clr-accent);
+}
+
 @media (min-width: 600px) {
   .about-me {
     max-width: 1000px;
     display: grid;
     grid-template-columns: 1fr 200px;
     grid-template-areas:
-      'title img'
-      'subtitle img'
-      'text img';
+      "title img"
+      "subtitle img"
+      "text img";
     grid-column-gap: 2em;
     margin: 0 auto;
   }

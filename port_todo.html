@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevMadeleine Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Quicksand:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"
+          ><img src="imgs/site_logo.png" alt="" class="logo__img"
+        /></a>
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html#home" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#about" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#work" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- portfolio about -->
+    <section class="intro">
+      <h1 class="section__title section__title--intro">
+        A Web Application: <strong>WHAT TO DO TODAY ?</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        A React Front-End Web Application
+      </p>
+      <img
+        src="imgs/portfolio/todo1.png"
+        alt="todo 1"
+        class="intro__img intro__port"
+      />
+    </section>
+
+    <!-- portfolio details -->
+    <div class="portfolio-item-individual">
+      <p>
+        A front-end web application done in React, you can have a look at it
+        <a
+          class="todo__link"
+          href="https://whattodotoday.netlify.com/"
+          target="_blank"
+          >here</a
+        >. I used some simple react dependecies like UUID, Pretty Checkbox, and
+        Transition Group to add extra styling and also to create unique IDs for
+        each to-do.
+      </p>
+      <img
+        src="imgs/portfolio/todo2.png"
+        alt="todo 2"
+        class="portfolio-item-individual__img"
+      /><br />
+      <p>
+        The app's state management is handled through these react hooks:
+        'useState' and 'useContext'. The hooks are implemented with context for
+        the To-Dos and the alert.<i></i>
+      </p>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <!-- add my own email -->
+      <a href="mailto:mdln.zdnrh@]gmail.com" class="footer__link"
+        >mdln.zdnrh[@]gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://github.com/madeleineher"
+            target="_blank"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/madeleine-hernan/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+  <script src="javascript/index.js"></script>
+</html>
